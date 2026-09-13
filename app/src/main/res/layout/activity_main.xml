@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/package_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="package name"
+        android:inputType="text"
+        android:text="com.rockstargames.gtasa" />
+
+    <Button
+        android:id="@+id/pick_folder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose output folder" />
+
+    <Button
+        android:id="@+id/extract_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Extract assets" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/audio_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Extract audio packs (requires a rooted device)"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ProgressBar
+            android:id="@+id/spinner"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/status_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="start"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:paddingStart="8dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/log_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fontFamily="monospace"
+        android:scrollbars="vertical"
+        android:textSize="12sp" />
+
+</LinearLayout>

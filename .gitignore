@@ -1,0 +1,19 @@
+.gradle/
+build/
+app/build/
+.kotlin/
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+*.apk
+*.aab
+*.ap_
+app/release/
+# opsec level: commit .jks
+*.keystore
+*.jks
+# i have a mac
+.DS_Store
