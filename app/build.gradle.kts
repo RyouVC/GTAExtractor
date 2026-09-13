@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.ryouvc"
+    namespace = "com.ryouvc.gtaextractor"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.ryouvc"
+        applicationId = "com.ryouvc.gtaextractor"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

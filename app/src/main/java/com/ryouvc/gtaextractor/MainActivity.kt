@@ -1,4 +1,4 @@
-package com.ryouvc
+package com.ryouvc.gtaextractor
 
 import android.net.Uri
 import android.os.Bundle
